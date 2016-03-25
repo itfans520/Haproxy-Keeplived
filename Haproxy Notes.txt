@@ -203,35 +203,7 @@ backend static_server
 三，虚拟主机核心配置 
     
 如下配置中忽略了global，defaults等配置，案例如下：
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
+
 frontend lvs2-lvs3
     bind *:8080
     acl is_lvs2 hdr_end(host) -i lvs2.test.net:8080
